@@ -1,6 +1,7 @@
 project_name: ring-api
 builds:
   - id: ring-api
+    main: ./cmd/ring-api/main.go
     binary: ring-api
     goos:
       - linux
