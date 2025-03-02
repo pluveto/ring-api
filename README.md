@@ -6,8 +6,10 @@ A production-ready audio playback service with concurrency control and cross-pla
 
 - Go 1.21+
 - Linux: ALSA tools (`aplay`)
-    - Arch Linux: `yay -S alsa-utils`
-- Windows: FFmpeg in PATH (`ffplay.exe`)
+  - Install: `sudo apt-get install alsa-utils`
+- Windows: FFmpeg
+  - Install: `choco install ffmpeg`
+- 5MB disk space
 
 ## Quick Start
 
