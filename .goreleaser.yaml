@@ -1,0 +1,22 @@
+project_name: ring-api
+builds:
+  - id: ring-api
+    binary: ring-api
+    goos:
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    flags:
+      - -trimpath
+    ldflags:
+      - -s -w
+archives:
+  - format: zip
+    replacements:
+      amd64: x86_64
+checksum:
+  name_template: 'checksums.txt'
+release:
+  draft: false
